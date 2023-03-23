@@ -1,7 +1,15 @@
 img {
   margin-top: 1px;
   width: 100%;
-  padding-left: 120px;
-  padding-right: 120px;
+  padding-left: 100px;
+  padding-right: 100px;
 }
+
+.banner{
+  z-index: -1;
+  margin-bottom: -200px;
+
+}
+
+
 

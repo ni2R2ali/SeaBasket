@@ -1,0 +1,134 @@
+[
+  {
+    "id": 17,
+    "name": "Mince Meat - Filling",
+    "price": 3486,
+    "category": "EIFS",
+    "details": "Curabitur gravida nisi at nibh.",
+    "imageUrl": "http://dummyimage.com/266x1030.png/5fa2dd/ffffff",
+    "saleCount": 0,
+    "createdAt": "2023-03-21T13:10:12.000Z",
+    "updatedAt": "2023-03-21T13:10:12.000Z"
+  },
+  {
+    "id": 95,
+    "name": "Sprite - 355 Ml",
+    "price": 3480,
+    "category": "Glass & Glazing",
+    "details": "In congue. Etiam justo.",
+    "imageUrl": "http://dummyimage.com/1047x1110.png/5fa2dd/ffffff",
+    "saleCount": 50,
+    "createdAt": "2023-03-21T13:10:12.000Z",
+    "updatedAt": "2023-03-21T13:10:12.000Z"
+  },
+  {
+    "id": 10,
+    "name": "Table Cloth 62x114 Colour",
+    "price": 3473,
+    "category": "Electrical",
+    "details": "In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.",
+    "imageUrl": "http://dummyimage.com/665x667.png/cc0000/ffffff",
+    "saleCount": 0,
+    "createdAt": "2023-03-21T13:10:12.000Z",
+    "updatedAt": "2023-03-21T13:10:12.000Z"
+  },
+  {
+    "id": 83,
+    "name": "Container Clear 8 Oz",
+    "price": 3331,
+    "category": "Masonry",
+    "details": "In quis justo.",
+    "imageUrl": "http://dummyimage.com/609x168.png/dddddd/000000",
+    "saleCount": 0,
+    "createdAt": "2023-03-21T13:10:12.000Z",
+    "updatedAt": "2023-03-21T13:10:12.000Z"
+  },
+  {
+    "id": 33,
+    "name": "Wine - Barolo Fontanafredda",
+    "price": 3315,
+    "category": "Plumbing & Medical Gas",
+    "details": "Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.",
+    "imageUrl": "http://dummyimage.com/580x312.png/5fa2dd/ffffff",
+    "saleCount": 0,
+    "createdAt": "2023-03-21T13:10:12.000Z",
+    "updatedAt": "2023-03-21T13:10:12.000Z"
+  },
+  {
+    "id": 50,
+    "name": "Energy Drink Bawls",
+    "price": 3304,
+    "category": "Fire Sprinkler System",
+    "details": "Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.",
+    "imageUrl": "http://dummyimage.com/209x1790.png/5fa2dd/ffffff",
+    "saleCount": 0,
+    "createdAt": "2023-03-21T13:10:12.000Z",
+    "updatedAt": "2023-03-21T13:10:12.000Z"
+  },
+  {
+    "id": 41,
+    "name": "Wine - Magnotta, Merlot Sr Vqa",
+    "price": 3286,
+    "category": "Temp Fencing, Decorative Fencing and Gates",
+    "details": "Quisque porta volutpat erat.",
+    "imageUrl": "http://dummyimage.com/232x608.png/cc0000/ffffff",
+    "saleCount": 0,
+    "createdAt": "2023-03-21T13:10:12.000Z",
+    "updatedAt": "2023-03-21T13:10:12.000Z"
+  },
+  {
+    "id": 73,
+    "name": "Cheese - Goat",
+    "price": 3282,
+    "category": "Structural & Misc Steel Erection",
+    "details": "Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem. Integer tincidunt ante vel ipsum.",
+    "imageUrl": "http://dummyimage.com/920x1649.png/5fa2dd/ffffff",
+    "saleCount": 0,
+    "createdAt": "2023-03-21T13:10:12.000Z",
+    "updatedAt": "2023-03-21T13:10:12.000Z"
+  },
+  {
+    "id": 88,
+    "name": "Cheese - Stilton",
+    "price": 3232,
+    "category": "Soft Flooring and Base",
+    "details": "Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis.",
+    "imageUrl": "http://dummyimage.com/736x1796.png/5fa2dd/ffffff",
+    "saleCount": 0,
+    "createdAt": "2023-03-21T13:10:12.000Z",
+    "updatedAt": "2023-03-21T13:10:12.000Z"
+  },
+  {
+    "id": 15,
+    "name": "Chip - Potato Dill Pickle",
+    "price": 3229,
+    "category": "Drilled Shafts",
+    "details": "Nullam varius. Nulla facilisi.",
+    "imageUrl": "http://dummyimage.com/428x1683.png/5fa2dd/ffffff",
+    "saleCount": 0,
+    "createdAt": "2023-03-21T13:10:12.000Z",
+    "updatedAt": "2023-03-21T13:10:12.000Z"
+  },
+  {
+    "id": 68,
+    "name": "Mushroom - Enoki, Dry",
+    "price": 3191,
+    "category": "Site Furnishings",
+    "details": "In congue. Etiam justo.",
+    "imageUrl": "http://dummyimage.com/387x1720.png/dddddd/000000",
+    "saleCount": 0,
+    "createdAt": "2023-03-21T13:10:12.000Z",
+    "updatedAt": "2023-03-21T13:10:12.000Z"
+  },
+  {
+    "id": 36,
+    "name": "Veal - Bones",
+    "price": 3137,
+    "category": "Retaining Wall and Brick Pavers",
+    "details": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+    "imageUrl": "http://dummyimage.com/144x611.png/5fa2dd/ffffff",
+    "saleCount": 0,
+    "createdAt": "2023-03-21T13:10:12.000Z",
+    "updatedAt": "2023-03-21T13:10:12.000Z"
+  }
+]

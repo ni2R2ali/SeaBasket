@@ -12,7 +12,8 @@ import { CheckoutComponent } from './checkout/checkout.component';
 import { LoginComponent } from './login/login.component';
 import { BannerComponent } from './banner/banner.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-
+import { MatCardModule } from '@angular/material/card';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -24,7 +25,6 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     CheckoutComponent,
     LoginComponent,
     BannerComponent,
-
   ],
   imports: [
     BrowserModule,
@@ -32,9 +32,10 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     BrowserAnimationsModule,
     MatIconModule,
     NgbModule,
+    MatCardModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent],
-
 })
-export class AppModule { }
+export class AppModule {}

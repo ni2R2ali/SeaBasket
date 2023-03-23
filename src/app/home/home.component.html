@@ -1,1 +1,12 @@
-<p>home works!</p>
+<div class="products">
+  <div class="product" *ngFor="let item of items">
+    <mat-card>
+      <p>{{ item.name }}</p>
+      <p>
+        Rs. <strong>{{ item.price }}</strong>
+      </p>
+      <img src="{{ item.imageUrl }}" alt="" class="product_image" />
+      <button>Add to cart</button>
+    </mat-card>
+  </div>
+</div>
