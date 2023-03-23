@@ -11,6 +11,8 @@ import { HomeComponent } from './home/home.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { LoginComponent } from './login/login.component';
 import { BannerComponent } from './banner/banner.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 
 
 @NgModule({
@@ -22,14 +24,17 @@ import { BannerComponent } from './banner/banner.component';
     CheckoutComponent,
     LoginComponent,
     BannerComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatIconModule
+    MatIconModule,
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
+
 })
 export class AppModule { }

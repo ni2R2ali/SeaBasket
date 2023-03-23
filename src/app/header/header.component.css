@@ -1,5 +1,5 @@
-.header_top{
-  height: 60px;
+.header_top {
+  height: 75px;
   background-color: black;
   font-size: 14px;
   display: flex;
@@ -8,37 +8,34 @@
   padding-bottom: 8px;
 }
 
-.header_menu{
+.header_menu {
   display: flex;
 }
 
-.header_menu > div{
+.header_menu > div {
   margin: 20px;
 }
 
-.header_menu_icon > mat-icon{
+.header_menu_icon > mat-icon {
   font-size: 30px;
   align-items: center;
 }
 
-.header_menu_searchbar{
+.header_menu_searchbar {
   display: flex;
-  /* margin-top: 8px;
-  height: 40px;
-  justify-content: center;
-  flex: 1;
-  margin-left: 200px; */
-  width: 50rem;
+  width: 60rem;
 }
 
-.header_menu_input{
-  height: 20px;
+.header_menu_input {
+  height: 40px;
   padding: 10px;
   border: none;
   width: 100%;
+  border-radius: 5px 0px 0px 5px;
+  margin-left: 40px;
 }
 
-.header_menu_searchbar_icon{
+.header_menu_searchbar_icon {
   background-color: lightseagreen;
   height: 40px;
   width: 40px;
@@ -46,49 +43,69 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  border-radius: 0px 5px 5px 0px;
 }
 
-.header_menu_logo{
+.header_menu_logo {
   object-fit: contain;
-  height: 99px;
+  height: 97px;
   margin-left: -40px;
   margin-top: 8px;
-  
+  margin-right: 20px;
 }
 
-.header_menu_signin{
+.header_menu_signin {
   display: flex;
   flex-direction: column;
+  margin-left: 40px;
+  margin-top: 20px;
 }
 
-.header_menu_top_item{
-  font-size: 15px;
+.header_menu_top_item {
+  font-size: 13px;
   color: lightgray;
 }
 
-.header_menu_bottom_item{
-  font-size: 17px;
-  font-weight:bolder;
+.header_menu_bottom_item {
+  font-size: 14px;
+  font-weight: bolder;
 }
 
-.header_menu_cart{
+.header_menu_cart {
   display: flex;
-  margin-top: 10px;
-  margin-left: 8px;
-  height: 50px;
+  margin-top: 25px;
+  margin-left: 150px;
   justify-content: space-around;
 }
 
-.header_cart_number{
+.header_cart_number {
   color: lightseagreen;
   font-size: 20px;
   font-weight: bolder;
 }
 
-.header_bottom{
-  height: 40px;
+.header_bottom {
+  height: 30px;
   background-image: none;
   background-color: #232f3e;
   padding-left: 8px;
   font-size: 12px;
 }
+
+h1{
+  margin-top: 40px;
+  font-size: 14px;
+  font-weight: bolder;
+  margin-left: -50px;
+}
+
+.mat-icon{
+  cursor: pointer;
+}
+
+.cartName{
+  margin-left: 5px;
+  margin-top: 27px;
+  font-size: 12px;
+}
+
