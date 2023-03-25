@@ -1,0 +1,10 @@
+<div class="total" *ngIf="shoppingCart.getCartLength() > 0">
+  <p>Total: ({{shoppingCart.getCartLength()}} items)
+    <strong>Rs. {{shoppingCart.getTotal()}}</strong>
+  </p>
+  <div class="total_gift">
+    <input type="checkbox" />
+    <p>This order contains a gift</p>
+  </div>
+  <button>Proceed to checkout</button>
+</div>

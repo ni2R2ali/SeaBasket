@@ -7,14 +7,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { HomeComponent } from './home/home.component';
-import { CheckoutComponent } from './checkout/checkout.component';
-import { LoginComponent } from './login/login.component';
+import { HomeComponent } from './Pages/home/home.component';
+import { CheckoutComponent } from './Pages/checkout/checkout.component';
+import { LoginComponent } from './Pages/login/login.component';
 import { BannerComponent } from './banner/banner.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MatCardModule } from '@angular/material/card';
 import { HttpClientModule } from '@angular/common/http';
-
+import { ProductsComponent } from './products/products.component';
+import { CheckoutTotalComponent } from './checkout-total/checkout-total.component';
+import { CheckoutProductsComponent } from './checkout-products/checkout-products.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,9 @@ import { HttpClientModule } from '@angular/common/http';
     CheckoutComponent,
     LoginComponent,
     BannerComponent,
+    ProductsComponent,
+    CheckoutTotalComponent,
+    CheckoutProductsComponent,
   ],
   imports: [
     BrowserModule,
@@ -33,7 +38,7 @@ import { HttpClientModule } from '@angular/common/http';
     MatIconModule,
     NgbModule,
     MatCardModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -1,0 +1,18 @@
+<div class="checkout">
+  <div class="checkout_left">
+    <div class="checkout-empty" *ngIf="shopping_cart.getCartLength() == 0">
+      <h2>Your SeaBasket Cart is empty</h2>
+      <p>No items in your cart!</p>
+    </div>
+    <div class="checkout-not-empty" *ngIf="shopping_cart.getCartLength() != 0">
+      <p><strong>Shopping Cart</strong></p>
+      <app-checkout-products
+        [checkout_products]="items"
+        (deleteEvent)="deleteEventHandler()"
+      ></app-checkout-products>
+    </div>
+  </div>
+  <div class="checkout_right">
+    <app-checkout-total></app-checkout-total>
+  </div>
+</div>

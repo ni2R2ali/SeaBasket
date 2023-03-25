@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ApiService } from '../Service/api.service';
+import { ApiService } from '../../Service/api.service';
 
 @Component({
   selector: 'app-home',
@@ -7,7 +7,7 @@ import { ApiService } from '../Service/api.service';
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnInit {
-  items: any[];
+  items: any;
 
   constructor(private api: ApiService) {}
 
@@ -21,4 +21,5 @@ export class HomeComponent implements OnInit {
       // console.log('resp ', resp);
     });
   }
+
 }

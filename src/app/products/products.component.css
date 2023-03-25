@@ -3,13 +3,11 @@
   flex-wrap: wrap;
   justify-content: center;
   margin-top: -350px;
-
 }
 .product > mat-card > img {
   object-fit: contain;
-  height: 100px;
-  width: 100px;
-
+  height: 250px;
+  width: 300px;
 }
 
 .product > mat-card > button {
@@ -18,7 +16,7 @@
   border: 1px solid;
 }
 
-.product > mat-card{
+.product > mat-card {
   display: flex;
   flex-direction: column;
   height: 400px;
@@ -26,6 +24,4 @@
   margin: 5px;
   justify-content: center;
   align-items: center;
-
-
 }
