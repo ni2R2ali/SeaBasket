@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "seabasket-b110a": {
+      "hosting": {
+        "seaBasket": [
+          "seabasket-b110a"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "seabasket-b110a"
+  }
+}

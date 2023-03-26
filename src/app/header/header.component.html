@@ -23,8 +23,19 @@
         </div>
       </div>
     </div>
-    <div routerLink="/login" class="header_menu_signin">
-      <span class="header_menu_top_item">Hello, sign in</span>
+    <div class="header_menu_signin">
+      <span
+        (click)="signOut()"
+        class="header_menu_top_item"
+        *ngIf="auth.isLoggedIn()"
+        >Hello, {{ auth.getUser() }}</span
+      >
+      <span
+        routerLink="/login"
+        class="header_menu_top_item"
+        *ngIf="!auth.isLoggedIn()"
+        >Hello, sign in</span
+      >
       <span class="header_menu_bottom_item">Accounts & Lists</span>
     </div>
     <div routerLink="/login" class="header_menu_signin">
