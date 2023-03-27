@@ -25,14 +25,14 @@
     </div>
     <div class="checkout_products_price">
       <p>
-        <strong>${{ prod.price }}</strong>
+        <strong>Rs.{{ prod.price }}</strong>
       </p>
     </div>
   </div>
   <div class="checkout_products_total">
     <p>
       Subtotal ({{ shoppingCartService.getCartLength() }} items):
-      <strong>${{ shoppingCartService.getTotal() }}</strong>
+      <strong>Rs. {{ shoppingCartService.getTotal() }}</strong>
     </p>
   </div>
 </div>

@@ -3,6 +3,7 @@
   flex-wrap: wrap;
   justify-content: center;
   margin-top: -350px;
+  background-color: lightgray;
 }
 .product > mat-card > img {
   object-fit: contain;

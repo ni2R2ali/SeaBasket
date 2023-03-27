@@ -24,6 +24,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AngularFireModule } from '@angular/fire/compat';
 import { firebaseConfig } from './Config/firebase.config';
 
+
 @NgModule({
   declarations: [
     AppComponent,
