@@ -46,7 +46,33 @@
       <mat-icon>shopping_cart</mat-icon>
       <p class="header_cart_number">{{ shoppingCart.getCartLength() }}</p>
     </div>
-    <h1 class="cartName">Cart</h1>
+    <h1 routerLink="/checkout" class="cartName">Cart</h1>
   </nav>
-  <nav class="header_bottom"></nav>
+  <nav class="header_bottom">
+    <mat-icon
+      class="categories"
+      style="
+        cursor: pointer;
+        margin-top: 5px;
+        margin-left: 135px;
+        transform: scale(1.1);
+      "
+      >menu</mat-icon
+    >
+    <div class="categoriesList">
+      <p>All</p>
+      <p>Mobiles</p>
+      <p>Laptops</p>
+      <p>Home & Kitchen</p>
+      <p>Watches</p>
+      <p>Books</p>
+      <p>Beauty</p>
+      <p>Sports</p>
+      <p>Bags</p>
+      <p>Baby Products</p>
+      <p>Imitation</p>
+      <p>Health</p>
+      <p>Grocery</p>
+    </div>
+  </nav>
 </div>
