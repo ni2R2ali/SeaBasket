@@ -23,7 +23,7 @@ import { provideAuth, getAuth } from '@angular/fire/auth';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AngularFireModule } from '@angular/fire/compat';
 import { firebaseConfig } from './Config/firebase.config';
-import { MobileComponent } from './categoryComponent/mobile/mobile.component';
+
 
 
 @NgModule({
@@ -38,7 +38,6 @@ import { MobileComponent } from './categoryComponent/mobile/mobile.component';
     ProductsComponent,
     CheckoutTotalComponent,
     CheckoutProductsComponent,
-    MobileComponent,
   ],
   imports: [
     BrowserModule,
