@@ -22,4 +22,9 @@ export class HomeComponent implements OnInit {
     });
   }
 
+  opened = false;
+
+  toggleSidebar() {
+    this.opened = !this.opened;
+  }
 }

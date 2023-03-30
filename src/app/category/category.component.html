@@ -1,0 +1,10 @@
+<ul>
+  <li *ngFor="let category of categories">
+    <a [routerLink]="['/products', { category: category.id }]">
+      <img [src]="category.imageUrl" alt="{{ category.name }} image">
+      <h2>{{ category.name }}</h2>
+      <p>{{ category.description }}</p>
+    </a>
+  </li>
+</ul>
+

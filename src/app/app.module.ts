@@ -23,8 +23,10 @@ import { provideAuth, getAuth } from '@angular/fire/auth';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AngularFireModule } from '@angular/fire/compat';
 import { firebaseConfig } from './Config/firebase.config';
-import { MobileComponent } from './categoryComponent/mobile/mobile.component';
-
+import { CategoryComponent } from './category/category.component';
+import { ProductListingComponent } from './product-listing/product-listing.component';
+import { SidebarModule } from 'ng-sidebar';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +40,9 @@ import { MobileComponent } from './categoryComponent/mobile/mobile.component';
     ProductsComponent,
     CheckoutTotalComponent,
     CheckoutProductsComponent,
-    MobileComponent,
+    CategoryComponent,
+    ProductListingComponent,
+    SidebarComponent,
   ],
   imports: [
     BrowserModule,
@@ -49,8 +53,8 @@ import { MobileComponent } from './categoryComponent/mobile/mobile.component';
     MatCardModule,
     HttpClientModule,
     ReactiveFormsModule,
+    SidebarModule.forRoot(),
     AngularFireModule.initializeApp(firebaseConfig),
-
 
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAuth(() => getAuth()),

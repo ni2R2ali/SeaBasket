@@ -1,0 +1,13 @@
+<ng-sidebar-container>
+  <ng-sidebar [opened]="opened">
+    <p>Sidebar contents</p>
+    <button  class="categories" (click)="toggleSidebar()" >X</button>
+    <ul class="menu">
+      <li><a routerLink="/" href="">Home</a></li>
+    </ul>
+  </ng-sidebar>
+  <div ng-sidebar-content>
+    <mat-icon style=" margin-top: 65px; color: white; transform: scale(1.1);
+    margin-left: 143px;" (click)="toggleSidebar()"> menu </mat-icon>
+  </div>
+</ng-sidebar-container>

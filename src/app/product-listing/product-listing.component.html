@@ -1,0 +1,56 @@
+<app-category></app-category>
+<div class="product-listing">
+  <
+  <div class="row">
+    <div class="col-3">
+      <h3>Categories</h3>
+      <ul class="list-group">
+        <li
+          class="list-group-item"
+          [routerLink]="['/products']"
+          [queryParams]="{ category: null }"
+          [queryParamsHandling]="'merge'"
+          [class.active]="!selectedCategoryId"
+        >
+          All
+        </li>
+        <li
+          class="list-group-item"
+          *ngFor="let category of category"
+          [routerLink]="['/products']"
+          [queryParams]="{ category: category.id }"
+          [queryParamsHandling]="'merge'"
+          [class.active]="selectedCategoryId === category.id"
+        >
+          {{ category.name }}
+        </li>
+      </ul>
+    </div>
+    <div class="col-9">
+      <h3>Products</h3>
+      <div class="row">
+        <div class="col-4 mb-3" *ngFor="let product of products">
+          <div class="card h-100">
+            <img
+              [src]="product.imageUrl"
+              class="card-img-top"
+              alt="{{ product.name }}"
+            />
+            <div class="card-body">
+              <h5 class="card-title">{{ product.name }}</h5>
+              <p class="card-text">{{ product.description }}</p>
+              <p class="card-text">
+                <strong>Price: {{ product.price | currency }}</strong>
+              </p>
+              <a
+                [routerLink]="['/products', product.id]"
+                class="btn btn-primary"
+                >View details</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
