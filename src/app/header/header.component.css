@@ -171,5 +171,7 @@ h4 {
   display: flex;
   gap: 3em;
   cursor: pointer;
+  list-style-type: none;
 }
+
 

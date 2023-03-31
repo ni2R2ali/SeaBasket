@@ -24,7 +24,6 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AngularFireModule } from '@angular/fire/compat';
 import { firebaseConfig } from './Config/firebase.config';
 import { CategoryComponent } from './category/category.component';
-import { ProductListingComponent } from './product-listing/product-listing.component';
 import { SidebarModule } from 'ng-sidebar';
 import { SidebarComponent } from './sidebar/sidebar.component';
 
@@ -41,7 +40,6 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     CheckoutTotalComponent,
     CheckoutProductsComponent,
     CategoryComponent,
-    ProductListingComponent,
     SidebarComponent,
   ],
   imports: [

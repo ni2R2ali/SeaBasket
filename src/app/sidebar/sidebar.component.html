@@ -1,13 +1,52 @@
 <ng-sidebar-container>
   <ng-sidebar [opened]="opened">
-    <p>Sidebar contents</p>
-    <button  class="categories" (click)="toggleSidebar()" >X</button>
+    <button class="categories" (click)="toggleSidebar()">X</button>
+
+    <mat-icon style="color: white; transform: scale(1.5); margin-left: 60px"
+      >account_circle</mat-icon
+    >
+    <div class="sidebar-top"></div>
+    <h1>Hello</h1>
     <ul class="menu">
-      <li><a routerLink="/" href="">Home</a></li>
+      <h2
+        class="sidebar-heading"
+        style="font-weight: bolder; letter-spacing: 2px"
+      >
+        Shop By Category
+      </h2><br><br>
+      <li><a routerLink="/" href="">Mobiles</a></li>
+      <hr>
+      <li><a routerLink="/" href="">Laptops</a></li>
+      <hr>
+      <li><a routerLink="/" href="">Home & Kitchen</a></li>
+      <hr>
+      <li><a routerLink="/" href="">Watches</a></li>
+      <hr>
+      <li><a routerLink="/" href="">Books</a></li>
+      <hr>
+      <li><a routerLink="/" href="">Beauty</a></li>
+      <hr>
+      <li><a routerLink="/" href="">Sports</a></li>
+      <hr>
+      <li><a routerLink="/" href="">Baby Products</a></li>
+      <hr>
+      <li><a routerLink="/" href="">Health</a></li>
+      <hr>
+      <li><a routerLink="/" href="">Grocery</a></li>
     </ul>
   </ng-sidebar>
   <div ng-sidebar-content>
-    <mat-icon style=" margin-top: 65px; color: white; transform: scale(1.1);
-    margin-left: 143px;" (click)="toggleSidebar()"> menu </mat-icon>
+    <mat-icon
+      style="
+        margin-top: 65px;
+        color: white;
+        transform: scale(1.1);
+        margin-left: 185px;
+        cursor: pointer;
+      "
+      (click)="toggleSidebar()"
+    >
+      menu
+    </mat-icon>
   </div>
 </ng-sidebar-container>

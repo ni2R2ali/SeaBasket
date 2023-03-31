@@ -2,10 +2,13 @@
   background: none;
   display: flex;
   width: 100%;
+  margin-top: 100px;
+  background-color: lightgray;
 }
 
 .checkout_left {
   flex: 1;
+  margin-left: 20px;
 }
 
 .checkout_empty{

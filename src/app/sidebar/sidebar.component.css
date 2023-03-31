@@ -1,16 +1,75 @@
 ng-sidebar-container {
   height: 100vh;
-  position:fixed;
+  position: fixed;
   top: 0;
   left: 0;
-  width: 250px;
+  width: 300px;
   height: 100%;
   z-index: 1000;
 }
 
 ::ng-deep .ng-sidebar {
-  background-color: gray;
+  /* background-color: gray; */
+  /* opacity: 0.9; */
+  background: rgba(118, 120, 118, 0.9);
   width: 300px;
-  padding: 2rem 3rem;
-  box-shadow: 0 0 2.5em rgba(85, 85, 85, 0.5);
+  /* padding: 2rem 3rem; */
+  /* box-shadow: 0 0 2.5em rgba(85, 85, 85, 0.5); */
+}
+
+.sidebar-top{
+  padding-bottom: 115px;
+  background-color: black;
+  margin-top: -80px;
+  color: white;
+  font-size: 30px;
+}
+
+.categories{
+  margin-left: 265px;
+  background-color: transparent;
+  color: white;
+  margin-top: 5px;
+  font-size: 20px;
+}
+
+.categories:hover{
+  border: 1px solid white;
+  box-shadow: rgb(252, 251, 251) 0px 3px 8px;
+}
+
+.sidebar-heading{
+  margin-top: 50px;
+  color: black;
+  background-color: white;
+  padding: 8px;
+  margin-right: 60px;
+}
+
+ul{
+  list-style-type: none;
+}
+
+li > a{
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 8px;
+}
+
+li > a:hover{
+  /* border: 1px solid lightyellow; */
+  border: solid 2px #019fb6;
+  transition: 1s;
+}
+
+h1{
+  margin-top: -68px;
+  color: white;
+  margin-left: 100px;
+  font-weight: bolder;
+}
+
+hr{
+  margin-left: -40px;
 }
