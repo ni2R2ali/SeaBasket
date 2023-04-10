@@ -42,7 +42,7 @@ ng-sidebar-container {
   margin-top: 50px;
   color: black;
   background-color: white;
-  padding: 8px;
+  padding: 5px;
   margin-right: 60px;
 }
 
@@ -60,6 +60,7 @@ li > a{
 li > a:hover{
   /* border: 1px solid lightyellow; */
   border: solid 2px #019fb6;
+  background-color: #019fb6;
   transition: 1s;
 }
 
@@ -72,4 +73,11 @@ h1{
 
 hr{
   margin-left: -40px;
+}
+
+#signout{
+  margin-top: 50px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-left: 40px;
 }

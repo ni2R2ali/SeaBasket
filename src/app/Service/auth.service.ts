@@ -1,7 +1,10 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable, NgZone } from '@angular/core';
+import { idToken } from '@angular/fire/auth';
 import { AngularFireAuth } from '@angular/fire/compat/auth';
 
 import { Router } from '@angular/router';
+import { catchError } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
@@ -12,7 +15,8 @@ export class AuthService {
   constructor(
     private fbAuth: AngularFireAuth,
     private ngZone: NgZone,
-    private router: Router
+    private router: Router,
+    private http: HttpClient
   ) {
     this.fbAuth.authState.subscribe((user) => {
       if (user) {
@@ -61,4 +65,6 @@ export class AuthService {
     const user = localStorage.getItem('user');
     return user ? user : null;
   }
+
+
 }

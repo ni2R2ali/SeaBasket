@@ -1,5 +1,4 @@
 .header {
-  position: sticky;
   z-index: 100;
   top: 0;
   position: fixed;
@@ -11,7 +10,7 @@
   font-size: 14px;
   display: flex;
   color: white;
-  padding-right: 69px;
+  padding-right: 74px;
   padding-bottom: 8px;
 }
 
@@ -35,25 +34,25 @@
 }
 
 .header_menu_input {
-  height: 40px;
+  height: 38px;
   padding: 10px;
   border: none;
   width: 100%;
   border-radius: 5px 0px 0px 5px;
-  margin-left: 40px;
+  margin-left: 20px;
   margin-top: -10px;
 }
 
 .header_menu_searchbar_icon {
   background-color: lightseagreen;
-  height: 40px;
+  height: 38px;
   width: 40px;
   color: black;
   display: flex;
   justify-content: space-around;
   align-items: center;
   border-radius: 0px 5px 5px 0px;
-  margin-top: -10.3px;
+  margin-top: -10px;
 }
 
 .header_menu_logo {
@@ -75,7 +74,6 @@
   flex-direction: column;
   margin-left: 40px;
   margin-top: 13px;
-  cursor: pointer;
 }
 
 /* .header_menu_signin:hover {
@@ -88,7 +86,7 @@
   color: lightgray;
 }
 
-.header_menu_bottom_item {
+#header_menu_bottom_item {
   font-size: 14px;
   font-weight: bolder;
 }
@@ -128,7 +126,7 @@ mat-icon {
 .header_menu_profile {
   cursor: pointer;
   padding-bottom: 30px;
-  padding-left: 15px;
+  padding-left: 50px;
   padding-right: 10px;
 }
 
@@ -173,5 +171,52 @@ h4 {
   cursor: pointer;
   list-style-type: none;
 }
+
+.dropdown-content-1 {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-top: 1px;
+  width: 120px;
+}
+
+.dropdown-content-1 span {
+  padding: 10px;
+  padding-left: 30px;
+  color: black;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+}
+
+.dropdown-content-1 span:hover {background-color: #d9534f; color: white;}
+
+.dropdown:hover .dropdown-content-1 {display: block; background-color: #ddd;}
+
+.dropdown-content-2 {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-top: 1px;
+  width: 120px;
+}
+
+.dropdown-content-2 span {
+  padding: 10px;
+  padding-left: 30px;
+  color: black;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+}
+
+.dropdown-content-2 span:hover {background-color: #5cb85c; color: white;}
+
+.dropdown:hover .dropdown-content-2 {display: block; background-color: #ddd;}
+
 
 

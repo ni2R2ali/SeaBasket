@@ -34,6 +34,8 @@
       <hr>
       <li><a routerLink="/" href="">Grocery</a></li>
     </ul>
+    <button class="btn btn-danger " id="signout" (click)="signOut()" routerLink="/login" *ngIf="auth.isLoggedIn()">Sign Out</button>
+    <button class="btn btn-success " id="signout" (click)="signIn()" routerLink="/login" *ngIf="!auth.isLoggedIn()">Sign in</button>
   </ng-sidebar>
   <div ng-sidebar-content>
     <mat-icon

@@ -11,10 +11,10 @@
         alt=""
       />
 
-      <div class="header_menu_profile">
+      <!-- <div class="header_menu_profile">
         <mat-icon style="margin-top: -5px">account_circle</mat-icon>
         <h4>Profile</h4>
-      </div>
+      </div> -->
 
       <div class="header_menu_searchbar">
         <input type="text" class="header_menu_input" placeholder="Search" />
@@ -23,6 +23,14 @@
         </div>
       </div>
     </div>
+
+    <div class="header_menu_profile">
+      <mat-icon routerLink="profile" style="margin-top: 12px"
+        >account_circle</mat-icon
+      >
+      <h4 routerLink="profile">Profile</h4>
+    </div>
+
     <div class="header_menu_signin">
       <span
         (click)="signOut()"
@@ -36,7 +44,27 @@
         *ngIf="!auth.isLoggedIn()"
         >Hello, sign in</span
       >
-      <span class="header_menu_bottom_item">Accounts & Lists</span>
+      <div class="dropdown">
+        <span class="drop" style="cursor: pointer" id="header_menu_bottom_item"
+          >Accounts & Lists</span
+        >
+        <div class="dropdown-content-1">
+          <span
+            *ngIf="auth.isLoggedIn()"
+            (click)="signOut()"
+            routerLink="/login"
+            >Sign Out</span
+          >
+        </div>
+        <div class="dropdown-content-2">
+          <span
+            *ngIf="!auth.isLoggedIn()"
+            (click)="signIn()"
+            routerLink="/login"
+            >Sign in</span
+          >
+        </div>
+      </div>
     </div>
     <div routerLink="/login" class="header_menu_signin">
       <span class="header_menu_top_item">Returns</span>
@@ -57,10 +85,9 @@
         margin-left: 135px;
         transform: scale(1.1);
       "
-      ></mat-icon
-    >
-    <div class="categoriesList" style="margin-left: 215px;">
-      <p style="margin-left: -10px;">All</p>
+    ></mat-icon>
+    <div class="categoriesList" style="margin-left: 215px">
+      <p style="margin-left: -10px">All</p>
       <li>Mobiles</li>
       <li>Laptops</li>
       <li>Home & Kitchen</li>

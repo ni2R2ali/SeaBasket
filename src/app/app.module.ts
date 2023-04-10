@@ -26,6 +26,7 @@ import { firebaseConfig } from './Config/firebase.config';
 import { CategoryComponent } from './category/category.component';
 import { SidebarModule } from 'ng-sidebar';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     CheckoutProductsComponent,
     CategoryComponent,
     SidebarComponent,
+    ProfileComponent,
   ],
   imports: [
     BrowserModule,
