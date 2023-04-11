@@ -27,6 +27,7 @@ import { CategoryComponent } from './category/category.component';
 import { SidebarModule } from 'ng-sidebar';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { ProfileComponent } from './profile/profile.component';
+import { CartLogoutComponent } from './cart-logout/cart-logout.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +44,7 @@ import { ProfileComponent } from './profile/profile.component';
     CategoryComponent,
     SidebarComponent,
     ProfileComponent,
+    CartLogoutComponent,
   ],
   imports: [
     BrowserModule,

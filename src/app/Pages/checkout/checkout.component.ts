@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from 'src/app/Service/auth.service';
 import { ShoppingCartService } from 'src/app/Service/shopping-cart.service';
 
 @Component({
@@ -9,7 +10,7 @@ import { ShoppingCartService } from 'src/app/Service/shopping-cart.service';
 export class CheckoutComponent implements OnInit {
   items: any[];
 
-  constructor(public shopping_cart: ShoppingCartService) {}
+  constructor(public shopping_cart: ShoppingCartService, public auth: AuthService) {}
 
   ngOnInit(): void {
     this.getShoppingCart();

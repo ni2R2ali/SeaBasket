@@ -1,4 +1,6 @@
-<div class="checkout">
+<!-- <app-login *ngIf="!auth.isLoggedIn()"></app-login> -->
+<app-cart-logout *ngIf="!auth.isLoggedIn()"></app-cart-logout>
+<div class="checkout" *ngIf="auth.isLoggedIn()">
   <div class="checkout_left">
     <div class="checkout-empty" *ngIf="shopping_cart.getCartLength() == 0">
       <h2>Your SeaBasket Cart is empty</h2>
@@ -16,3 +18,4 @@
     <app-checkout-total></app-checkout-total>
   </div>
 </div>
+

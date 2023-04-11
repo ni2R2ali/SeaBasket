@@ -4,13 +4,15 @@ import { CheckoutComponent } from './Pages/checkout/checkout.component';
 import { HomeComponent } from './Pages/home/home.component';
 import { LoginComponent } from './Pages/login/login.component';
 import { ProfileComponent } from './profile/profile.component';
+import { CartLogoutComponent } from './cart-logout/cart-logout.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'login', component: LoginComponent },
   { path: 'checkout', component: CheckoutComponent },
   { path: 'profile', component: ProfileComponent },
-  {path: '**', redirectTo:'login'}
+  { path: 'app-cart-logout', component: CartLogoutComponent },
+  { path: '**', redirectTo: 'login' },
 ];
 
 @NgModule({

@@ -4,6 +4,7 @@
   flex-direction: column;
   align-items: center;
   height: 100px;
+  margin-top: 100px;
 }
 
 .login-container {
@@ -44,13 +45,13 @@ form > input {
 }
 
 .login-sign-button {
-  background-color: lightseagreen;
+  background-color: rgb(65, 201, 156);
   border: 1px solid;
   border-radius: 2px;
   width: 100%;
   height: 30px;
   color: black;
-  border-color: lightseagreen;
+  border-color: rgb(65, 201, 156);
 }
 
 .login-create-button{
@@ -59,5 +60,5 @@ form > input {
   width: 100%;
   height: 30px;
   color: black;
-  border-color: lightseagreen;
+  border-color: rgb(65, 201, 156);
 }

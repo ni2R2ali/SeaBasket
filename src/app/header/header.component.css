@@ -44,7 +44,7 @@
 }
 
 .header_menu_searchbar_icon {
-  background-color: lightseagreen;
+  background-color: rgb(65, 201, 156);
   height: 38px;
   width: 40px;
   color: black;
@@ -105,7 +105,7 @@
 } */
 
 .header_cart_number {
-  color: lightseagreen;
+  color: rgb(65, 201, 156);
   font-size: 20px;
   font-weight: bolder;
   cursor: pointer;
