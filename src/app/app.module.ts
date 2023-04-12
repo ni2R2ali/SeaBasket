@@ -20,7 +20,7 @@ import { CheckoutProductsComponent } from './checkout-products/checkout-products
 import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideAuth, getAuth } from '@angular/fire/auth';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AngularFireModule } from '@angular/fire/compat';
 import { firebaseConfig } from './Config/firebase.config';
 import { CategoryComponent } from './category/category.component';
@@ -28,6 +28,11 @@ import { SidebarModule } from 'ng-sidebar';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { ProfileComponent } from './profile/profile.component';
 import { CartLogoutComponent } from './cart-logout/cart-logout.component';
+import { FilterPipe } from './shared/filter.pipe';
+import { ConfirmationDialogComponent } from './confirmation-dialog/confirmation-dialog.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatButtonModule } from '@angular/material/button';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +50,9 @@ import { CartLogoutComponent } from './cart-logout/cart-logout.component';
     SidebarComponent,
     ProfileComponent,
     CartLogoutComponent,
+    FilterPipe,
+    ConfirmationDialogComponent,
+    ProductDetailComponent,
   ],
   imports: [
     BrowserModule,
@@ -55,6 +63,9 @@ import { CartLogoutComponent } from './cart-logout/cart-logout.component';
     MatCardModule,
     HttpClientModule,
     ReactiveFormsModule,
+    FormsModule,
+    MatDialogModule,
+    MatButtonModule,
     SidebarModule.forRoot(),
     AngularFireModule.initializeApp(firebaseConfig),
 

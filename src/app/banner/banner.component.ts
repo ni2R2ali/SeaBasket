@@ -12,5 +12,6 @@ export class BannerComponent {
     `https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/61jLjFXfkrL._SX3000_.jpg`,
     `https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/61O759bS39L._SX3000_.jpg`,
   ];
+term: any;
   // images = [944, 1011, 984].map((n) => `https://picsum.photos/id/${n}/900/500`);
 }

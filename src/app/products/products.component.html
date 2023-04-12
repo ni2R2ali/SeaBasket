@@ -1,13 +1,22 @@
 <div class="products">
-  <div class="product" *ngFor="let item of products">
+  <div
+    class="product"
+    *ngFor="let item of filterCategory | filter : searchKey : 'title'"
+  >
     <mat-card>
-      <p>{{ item.title }}</p>
       <p>
-        Rs. <strong>{{ item.price }}</strong>
+        <strong>{{ item.title }}</strong>
       </p>
-      <img src="{{ item.images }}" alt="" class="product_image" />
-      <button (click)="addToCart(item)">Add to cart</button>
+      <p>Rs. {{ item.price }}</p>
+      <img src="{{ item.thumbnail }}" alt="" class="product_image" />
+      <button
+        id="AddToCartButton"
+        class="btn btn-primary"
+        (click)="addToCart(item)"
+      >
+        Add to cart</button
+      ><br />
+      <p (click)="selectProduct(item)" style="color: rgb(65, 201, 156); cursor: pointer;">View Details</p>
     </mat-card>
   </div>
 </div>
-

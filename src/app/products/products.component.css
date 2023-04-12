@@ -13,14 +13,16 @@
 
 .product > mat-card > button {
   margin-top: 20px;
-  background-color: lightseagreen;
+  background-color: rgb(65, 201, 156);
   border: 1px solid;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .product > mat-card {
   display: flex;
   flex-direction: column;
-  height: 400px;
+  height: 450px;
   width: 350px;
   margin: 5px;
   justify-content: center;

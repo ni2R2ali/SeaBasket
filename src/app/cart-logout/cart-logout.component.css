@@ -9,10 +9,20 @@
   padding: 5px;
   padding-left: 10px;
   padding-right: 10px;
-  margin-left: 120px;
+  margin-left: 145px;
 }
 
 .box{
   background-color: rgb(65, 201, 156);
   padding-bottom: 250px;
+}
+
+h1{
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+p{
+  margin-left: 110px;
+  font-size: 15px;
 }

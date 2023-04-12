@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiService } from '../../Service/api.service';
+import { ShoppingCartService } from 'src/app/Service/shopping-cart.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -9,7 +11,9 @@ import { ApiService } from '../../Service/api.service';
 export class HomeComponent implements OnInit {
   items: any;
 
-  constructor(private api: ApiService) {}
+  searchKey: string = '';
+
+  constructor(private api: ApiService, private router: Router) {}
 
   ngOnInit(): void {
     this.getProducts();

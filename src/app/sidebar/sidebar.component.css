@@ -13,6 +13,7 @@ ng-sidebar-container {
   /* opacity: 0.9; */
   background: rgba(118, 120, 118, 0.9);
   width: 300px;
+
   /* padding: 2rem 3rem; */
   /* box-shadow: 0 0 2.5em rgba(85, 85, 85, 0.5); */
 }
@@ -31,6 +32,7 @@ ng-sidebar-container {
   color: white;
   margin-top: 5px;
   font-size: 20px;
+
 }
 
 .categories:hover{
@@ -48,6 +50,7 @@ ng-sidebar-container {
 
 ul{
   list-style-type: none;
+  margin-left: 30px;
 }
 
 li > a{
@@ -73,10 +76,12 @@ h1{
 
 hr{
   margin-left: -40px;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 #signout{
-  margin-top: 50px;
+  margin-top: 40px;
   cursor: pointer;
   font-size: 18px;
   margin-left: 40px;

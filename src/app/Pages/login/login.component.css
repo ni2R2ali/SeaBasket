@@ -1,10 +1,10 @@
 .login {
-  margin: 10px;
+  padding-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 100px;
-  margin-top: 100px;
+  margin-top: 5px;
 }
 
 .login-container {
@@ -54,7 +54,7 @@ form > input {
   border-color: rgb(65, 201, 156);
 }
 
-.login-create-button{
+.login-create-button {
   border: 1px solid;
   border-radius: 2px;
   width: 100%;

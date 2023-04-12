@@ -5,13 +5,15 @@ import { HomeComponent } from './Pages/home/home.component';
 import { LoginComponent } from './Pages/login/login.component';
 import { ProfileComponent } from './profile/profile.component';
 import { CartLogoutComponent } from './cart-logout/cart-logout.component';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'login', component: LoginComponent },
   { path: 'checkout', component: CheckoutComponent },
   { path: 'profile', component: ProfileComponent },
-  { path: 'app-cart-logout', component: CartLogoutComponent },
+  { path: 'cart-logout', component: CartLogoutComponent },
+  { path: 'product-detail', component: ProductDetailComponent },
   { path: '**', redirectTo: 'login' },
 ];
 
