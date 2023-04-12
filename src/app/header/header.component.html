@@ -43,7 +43,7 @@
         (click)="signOut()"
         class="header_menu_top_item"
         *ngIf="auth.isLoggedIn()"
-        >Hello, {{ auth.getUser() }}</span
+        >{{ auth.getUser() }}</span
       >
       <span
         routerLink="/login"
@@ -56,11 +56,7 @@
           >Accounts & Lists</span
         >
         <div class="dropdown-content-1">
-          <span
-            *ngIf="auth.isLoggedIn()"
-
-            routerLink="/"
-            (click)="openDialog()"
+          <span *ngIf="auth.isLoggedIn()" routerLink="/" (click)="openDialog()"
             >Sign Out</span
           >
         </div>
@@ -75,15 +71,16 @@
         </div>
       </div>
     </div>
-    <div routerLink="/login" class="header_menu_signin">
+    <!-- <div routerLink="/login" class="header_menu_signin">
       <span class="header_menu_top_item">Returns</span>
       <span style="font-weight: bolder;" class="header_menu_bottom_item">& Orders</span>
-    </div>
+    </div> -->
     <div routerLink="/checkout" class="header_menu_cart">
       <mat-icon>shopping_cart</mat-icon>
       <p class="header_cart_number">{{ shoppingCart.getCartLength() }}</p>
     </div>
     <h1 routerLink="/checkout" class="cartName">Cart</h1>
+
   </nav>
   <nav class="header_bottom">
     <mat-icon
@@ -96,7 +93,7 @@
       "
     ></mat-icon>
     <div class="categoriesList" style="margin-left: 215px">
-      <p style="margin-left: -10px">All</p>
+      <p style="margin-left: -10px" routerLink="/" >All</p>
       <li>Mobiles</li>
       <li>Laptops</li>
       <li>Home & Kitchen</li>

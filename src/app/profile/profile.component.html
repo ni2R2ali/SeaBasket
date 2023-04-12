@@ -1,73 +1,32 @@
-<form [formGroup]="Form" (ngSubmit)="onSubmit()">
-  <div
-    style="margin-top: 120px; margin-left: 450px"
-    class="col-md-6 card shadow px-4 py-4"
-  >
-    <div class="row">
-      <h2 class="col">Profile</h2>
-      <div class="col ml-auto text-right">
-        <button
-          class="btn btn-success"
-          type="button"
-          routerLink="/profile"
-          [queryParams]="{ EditMode: true }"
-        >
-          Edit Profile
-        </button>
-      </div>
-    </div>
-    <hr />
-    <div>
-      EditMode:
-      <span
-        class="badge"
-        [ngClass]="{ 'badge-danger': !editMode, 'badge-success': editMode }"
-      >
-        {{ editMode ? "ON" : "OFF" }}
-      </span>
-    </div>
-    <hr />
-    <div class="form-group">
-      <label>{{ editMode ? "Enter" : "" }} Name</label>
-      <span class="value" *ngIf="!editMode">Nirali Tak</span>
-      <input
-        *ngIf="editMode"
-        type="text"
-        class="form-control"
-        formControlName="name"
-      />
-      <small
-        *ngIf="!Form.get('name').valid && Form.get('name').touched"
-      ></small>
-    </div>
-    <br />
-
-    <div class="form-group">
-      <label>{{ editMode ? "Enter" : "" }} Profile Picture Url</label>
-      <span style="padding-bottom: 150px" class="value" *ngIf="!editMode"
-        >Test Url</span
-      >
-      <input
-        *ngIf="editMode"
-        type="text"
-        class="form-control"
-        formControlName="picture"
-      />
-      <small
-        *ngIf="!Form.get('picture').valid && Form.get('picture').touched"
-      ></small>
-    </div>
-
-    <div style="margin-top: 50px" class="btn-row" *ngIf="editMode">
-      <button type="submit" class="btn btn-primary mr-2">Save Profile</button>
-      <button
-        type="button"
-        class="btn btn-outline-secondary"
-        (click)="onDiscard()"
-      >
-        Discard
-      </button>
-    </div>
-    <br />
+<div class="container">
+<div style="margin-left: 350px;" class="col-md-6">
+<form style="margin-top: 150px;" [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+  <label>Name:</label>
+  <input type="text" formControlName="name">
+  <div *ngIf="profileForm.get('name').invalid && (profileForm.get('name').dirty || profileForm.get('name').touched)">
+    <div *ngIf="profileForm.get('name').errors.required">Name is required.</div>
   </div>
+
+  <label>Email:</label>
+  <input type="email" formControlName="email">
+  <div *ngIf="profileForm.get('email').invalid && (profileForm.get('email').dirty || profileForm.get('email').touched)">
+    <div *ngIf="profileForm.get('email').errors.required">Email is required.</div>
+    <div *ngIf="profileForm.get('email').errors.email">Email must be a valid email address.</div>
+  </div>
+
+  <label>Mobile Number:</label>
+  <input type="tel" formControlName="mobileNumber">
+  <div *ngIf="profileForm.get('mobileNumber').invalid && (profileForm.get('mobileNumber').dirty || profileForm.get('mobileNumber').touched)">
+    <div *ngIf="profileForm.get('mobileNumber').errors.pattern">Mobile Number must be a valid phone number.</div>
+  </div>
+
+  <label>Shipping Address:</label>
+  <textarea formControlName="shippingAddress"></textarea>
+  <div *ngIf="profileForm.get('shippingAddress').invalid && (profileForm.get('shippingAddress').dirty || profileForm.get('shippingAddress').touched)">
+    <div *ngIf="profileForm.get('shippingAddress').errors.required">Shipping Address is required.</div>
+  </div>
+
 </form>
+</div>
+<button type="submit" [disabled]="!profileForm.valid" (click)="onSubmit()">Update Profile</button>
+</div>

@@ -1,10 +1,9 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable, NgZone } from '@angular/core';
-import { idToken } from '@angular/fire/auth';
 import { AngularFireAuth } from '@angular/fire/compat/auth';
 
 import { Router } from '@angular/router';
-import { catchError } from 'rxjs';
+
 
 @Injectable({
   providedIn: 'root',

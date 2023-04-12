@@ -1,60 +1,32 @@
-import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
-import { ActivatedRoute, Router } from '@angular/router';
+import { Component } from '@angular/core';
+import { FormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-profile',
   templateUrl: './profile.component.html',
-  styleUrls: ['./profile.component.css'],
+  styleUrls: ['./profile.component.css']
 })
-export class ProfileComponent implements OnInit {
-  Form: FormGroup;
-  editMode: boolean = true;
+export class ProfileComponent {
+  name: string = 'John Doe';
+  email: string = 'johndoe@example.com';
+  mobileNumber: string = '123-456-7890';
+  shippingAddress: string = '123 Main St, Anytown, USA';
 
-  constructor(
-    private fb: FormBuilder,
-    private router: Router,
-    private activatedRoute: ActivatedRoute
-  ) {}
+  profileForm = this.fb.group({
+    name: ['', Validators.required],
+    email: ['', [Validators.required, Validators.email]],
+    mobileNumber: ['', Validators.pattern('^[6-9][0-9]{9}$')],
+    shippingAddress: ['', Validators.required]
+  });
 
-  ngOnInit(): void {
-    this.Form = this.fb.group({
-      name: ['Edit name'],
-      picture: ['Edit Photo'],
-    });
-
-    this.activatedRoute.queryParamMap.subscribe((res) => {
-      // console.log(res.get('EditMode'));
-      let qParams = res.get('EditMode');
-
-      if (qParams != null) {
-        this.editMode = true;
-      } else {
-        this.editMode = false;
-      }
-    });
-  }
+  constructor(private fb: FormBuilder) {}
 
   onSubmit() {
-    if (this.Form.valid) {
-      console.log(this.Form.value);
+    if (this.profileForm.valid) {
+      // send updated profile information to server
+      console.log('Profile updated');
     } else {
-      let key = Object.keys(this.Form.controls);
-      // console.log(key)
-
-      key.filter((data) => {
-        // console.log(data)
-        let control = this.Form.controls[data];
-        // console.log(control)
-        if (control.errors != null) {
-          control.markAllAsTouched();
-        }
-      });
+      console.log('Form is invalid');
     }
-  }
-
-  onDiscard() {
-    this.Form.reset();
-    this.router.navigate([], { queryParams: { EditMode: null } });
   }
 }
