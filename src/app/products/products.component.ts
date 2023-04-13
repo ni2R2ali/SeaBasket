@@ -23,15 +23,10 @@ export class ProductsComponent implements OnInit {
 
   ngOnInit(): void {
     this.api.getJson().subscribe((res) => {
-      this.items = res;
       this.filterCategory = res;
       this.items.forEach((a: any) => {
-        if (a.category === 'smartphones') {
-          a.category = 'smartphones';
-        }
         Object.assign(a, { quantity: 1, total: a.price });
       });
-      // console.log(this.items);
     });
 
     this.shoppingCart.search.subscribe((val: any) => {
@@ -44,26 +39,18 @@ export class ProductsComponent implements OnInit {
     this.shoppingCart.addProduct(prod);
   }
 
-  filter(category: string) {
-    this.filterCategory = this.items.filter((a: any) => {
-      if (a.category == category || category == '') {
-        return a;
-      }
-    });
-  }
-
   selectProduct(product) {
     // console.log('product selected');
     // this.router.navigate(['product-detail', product.id]);
 
     let navigationExtras: NavigationExtras = {
-      queryParams:{
-        'id':product.id
+      queryParams: {
+        id: product.id,
       },
       state: {
-        item: product
-      }
-    }
-    this.router.navigate(['product-detail'], navigationExtras)
+        item: product,
+      },
+    };
+    this.router.navigate(['product-detail'], navigationExtras);
   }
 }

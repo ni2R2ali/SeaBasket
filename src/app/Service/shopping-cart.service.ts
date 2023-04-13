@@ -47,7 +47,7 @@ export class ShoppingCartService {
 
     const index = items.findIndex((item) => item.id == prod.id);
     if (index >= 0) {
-      console.log('hitting if');
+      // console.log('hitting if');
       items.splice(index, 1);
       return localStorage.setItem('shopping_cart', JSON.stringify(items));
     }
