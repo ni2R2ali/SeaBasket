@@ -1,0 +1,120 @@
+<div style="margin-bottom: 150px;" class="container">
+  <h1>Checkout</h1>
+  <h2>Select a payment method</h2>
+  <h2 style="margin-top: -50px; margin-left: 50%">Payment method</h2>
+  <div style="padding-bottom: 100px" class="box">
+    <div class="row">
+      <div class="col">
+        <div>
+          <label>
+            <input type="radio" name="paymentMethod" value="creditCard" />
+            Pay with Debit/Credit/ATM Cards
+          </label>
+        </div>
+        <div>
+          <label>
+            <input type="radio" name="paymentMethod" value="debitCard" />
+            Debit Card
+          </label>
+        </div>
+        <div>
+          <label>
+            <input type="radio" name="paymentMethod" value="cashOnDelivery" />
+            Cash on Delivery
+          </label>
+        </div>
+        <div>
+          <label>
+            <input type="radio" name="paymentMethod" value="upi" /> UPI
+          </label>
+        </div>
+      </div>
+
+      <div class="col">
+        <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
+          <div class="col">
+            <div class="form-group">
+              <label>Card Number</label>
+              <input
+                type="text"
+                formControlName="cardNumber"
+                class="form-control"
+                [ngClass]="{
+                  'is-invalid':
+                    checkoutForm.get('cardNumber').invalid &&
+                    checkoutForm.get('cardNumber').touched
+                }"
+              />
+              <div
+                *ngIf="
+                  checkoutForm.get('cardNumber').invalid &&
+                  checkoutForm.get('cardNumber').touched
+                "
+                class="invalid-feedback"
+              >
+                Please enter a valid card number.
+              </div>
+            </div>
+            <br />
+
+            <div class="form-group">
+              <label>Expiration Date</label>
+              <input
+                type="text"
+                formControlName="expirationDate"
+                class="form-control"
+                [ngClass]="{
+                  'is-invalid':
+                    checkoutForm.get('expirationDate').invalid &&
+                    checkoutForm.get('expirationDate').touched
+                }"
+              />
+              <div
+                *ngIf="
+                  checkoutForm.get('expirationDate').invalid &&
+                  checkoutForm.get('expirationDate').touched
+                "
+                class="invalid-feedback"
+              >
+                Please enter a valid expiration date.
+              </div>
+            </div>
+            <br />
+
+            <div class="form-group">
+              <label>CVV</label>
+              <input
+                type="text"
+                formControlName="cvv"
+                class="form-control"
+                [ngClass]="{
+                  'is-invalid':
+                    checkoutForm.get('cvv').invalid &&
+                    checkoutForm.get('cvv').touched
+                }"
+              />
+              <div
+                *ngIf="
+                  checkoutForm.get('cvv').invalid &&
+                  checkoutForm.get('cvv').touched
+                "
+                class="invalid-feedback"
+              >
+                Please enter a valid CVV number.
+              </div>
+            </div>
+          </div><br>
+
+          <button
+            type="submit"
+            [disabled]="checkoutForm.invalid"
+            class="btn btn-primary"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<div></div>

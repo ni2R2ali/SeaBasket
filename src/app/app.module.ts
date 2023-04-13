@@ -33,6 +33,8 @@ import { ConfirmationDialogComponent } from './confirmation-dialog/confirmation-
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatButtonModule } from '@angular/material/button';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { CheckoutPageComponent } from './Pages/checkout-page/checkout-page.component';
+import { ShippingAddressComponent } from './shipping-address/shipping-address.component';
 
 @NgModule({
   declarations: [
@@ -53,7 +55,10 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
     FilterPipe,
     ConfirmationDialogComponent,
     ProductDetailComponent,
+    CheckoutPageComponent,
+    ShippingAddressComponent,
   ],
+
   imports: [
     BrowserModule,
     AppRoutingModule,

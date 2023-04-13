@@ -1,0 +1,22 @@
+
+
+.container{
+  padding-top: 120px;
+}
+
+.box{
+  margin-top: 10px;
+}
+
+h1{
+  margin-left: 45%;
+  font-size: 30px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+h2{
+  margin-top: 50px;
+  color: rgb(65, 201, 156);
+  font-family:'Courier New', Courier, monospace;
+  font-weight: bolder;
+}
